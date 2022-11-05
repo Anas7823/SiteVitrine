@@ -1,0 +1,184 @@
+body {
+    font-family : Arial, Helvetica, sans-serif;
+    margin: 0;
+    background-image: url(./images/blue-pale.svg) ;
+    background-size: 60%;
+    background-repeat: no-repeat;
+}
+
+/* Ici on décide que nos sections prennent la totalité visible de notre page dans le navigateur, 
+ici vw vaut pour viewport width et vh viewport height. 100 vh = 100% de la hauteur du viewport */
+section {
+    width: 100%;
+    height: 100vh;
+}
+
+/* Début du css de la navbar */
+/* On peut donner une position 'fixed' à notre header afin que celui-ci soit "fixé" au sommet de notre page en précisant top:0 */
+header {
+    margin-left: 5%;
+    width: 90%;
+    margin-top: 1rem;
+    padding-top: 2rem;
+    position: fixed;
+    display: flex;
+    align-items: center; /* centrer les éléments de la même div horizontalement */
+    top: 0;
+    /* Code a déplacer pour qu'il soit appliquer dans les autres pages que accueil */
+    border-radius: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.062);
+    background-color: rgb(255, 255, 255);
+    box-shadow: -5px 5px 50px 5px rgba(0, 0, 0, 0.25) ;
+    padding-bottom: 30px;
+    /* Code a déplacer pour qu'il soit appliquer dans les autres pages que accueil*/
+}
+.navElement > a{ /* le > sert a viser l'élément descendant directement de la 1ere class donc la c a descendant direct de navElement */
+    padding-left: 25px;
+    padding-right: 25px;
+    font-size: 20px;
+    text-decoration: none;
+    color: rgb(0, 42, 139);
+}
+.navElement{
+    margin-left: 54%;
+    color: rgb(0, 42, 139);
+}
+.signupBtn{
+    border: 1px solid rgb(0, 42, 139);
+    border-radius: 20px;
+    padding: 10px;
+}
+.logo {
+    margin-left: 5rem;
+    font-size: 2rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: rgb(0, 42, 139)
+}
+/* Fin du css de la navbar */
+
+/* Début du css pour "home" */
+#home{
+    display: flex;
+    align-items: center;
+}
+.containerHome{
+    /* border: 1px solid rgb(0, 0, 0); */
+    color: rgb(0, 42, 139);
+    margin-left: 7rem;
+    margin-top: 10rem;
+    height: 40rem;
+    width: 35rem;
+
+}
+.titreContainer{
+    padding: 0px 70px 50px 70px;
+    font-size: 50px;
+    color: rgb(0, 42, 139)
+}
+.contenueContainer{
+    padding-left: 70px;
+    font-size: 19px;
+}
+.titreContainer2{
+    padding: 70px 70px 30px 70px;
+    font-size: 30px;
+    color: rgb(0, 42, 139)
+}
+.bouton{
+    color: white;
+    border-color:rgba(240, 248, 255, 0);
+    border-radius: 20px;
+    height: 40px;
+    width: 120px;
+    margin: 40px 0 0 70px;  /* haut | droit | bas | gauche (sens des aiguis d'une montre)*/
+    background: rgb(219,91,91);
+    background: linear-gradient(0deg, rgba(219,91,91,1) 0%, rgba(119,80,228,1) 80%);
+}
+.imageHome > img{ /* img descendant direct de imageHome */
+    margin-left: 60px;
+    height: 35rem;
+}
+/* Fin du css pour "home" */
+
+/* Début du css pour "Services" */
+.containerServices{
+    height: 100%;
+    border: 1px solid rgba(255, 7, 7, 0); /* Je le laisse prc sa décale tout donc je l'est mis en transparant*/
+
+}
+.titreService{
+    text-align: center;    
+    margin-top: 10rem;
+    color: rgb(0, 42, 139);
+    margin-left: auto;
+    margin-right: auto;
+    height: 5rem;
+    width: 60%;
+    font-size: 50px;
+}
+.contenueService{
+    display: flex;
+    height: 50%;
+    width: 60%;
+    margin-left: auto; /*sert a centrer automatiquement*/
+    margin-right: auto; /*sert a centrer automatiquement*/
+    margin-top: 6rem;
+    color: rgb(0, 42, 139);
+}
+.sousPartieService{
+
+    width: 34%;
+}
+.imgServ{
+    height: 50%;
+}
+.imgServ > img{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2rem;
+    height: 100%;
+}
+.titreServ{
+    margin-top: 4rem;
+}
+/* Fin du css pour "Services" */ 
+
+/* Début css "About*/
+.contenueAbout{
+    height: 60%;
+    width: 80%;
+    margin-left: auto; /*sert a centrer automatiquement*/
+    margin-right: auto; /*sert a centrer automatiquement*/
+   
+    color: rgb(0, 42, 139);
+}
+.profil{
+    margin-bottom: 3.5rem;
+    display: flex;
+    height: 33%;
+    color: rgb(0, 42, 139);
+}
+.imgProfil{
+    height: 100%;
+    width: 15%;
+}
+.imgProfil > img{
+    height: 100%;
+    width: 90%;
+    margin-top: -5%;
+    margin-left: 5%;
+}
+.contenueProfil{
+    height: 100%;
+    width: 75%;
+    margin-left: 5%;
+}
+.titreProfil{
+    margin-bottom: 30px;
+    font-size: 17px;
+}
+.titreProfil > b{
+    font-size: 30px;
+}
+/* Fin css "About*/

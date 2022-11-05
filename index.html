@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Site Vitrine</title>
+</head> 
+<body>
+
+    <header>
+        <a href="#" class="logo">LOGO</a>
+        <!-- Notre nav pourrait utiliser la techniques des "anchors" cad utiliser les id de nos sections (ou autres éléments HTML)
+        pour scroller automatiquement vers son emplacement. Pour que cela fonctionne il faut renseigner l'#id de l'élément
+        ciblé dans le href="" de notre lien <a> -->
+        <nav class="navElement">
+            <a href="#services">Services</a>
+            <a href="#work">Work</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+            <a class="signupBtn" href="#signup">Signup</a>
+        </nav>
+    </header>
+    
+    <section id="home">
+        <!-- SECTION - Les sections sont des balises permettant de découper proprement notre page en différents morceaux. 
+        Ici dans le cadre d'un site de type Single-page elles peuvent faire office de conteneur pour nos différentes rubriques. -->
+
+        <div class="containerHome">
+            <div class="titreContainer"> <!-- J'ai mis une div dans chaque phrase pour mettre des padding en css-->
+                <b>Hey !</b> do you know <b>what we do ?</b>
+            </div>
+
+            <div class="contenueContainer">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est, recusandae earum. Aperiam laborum, obcaecati nulla labore in, neque repellendus, officia error iusto omnis natus architecto eos similique odit tenetur quod.
+            </div>
+
+            <div class="titreContainer2">
+                <b>Sound awesome right ?</b>
+            </div>
+
+            <div class="contenueContainer">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est, recusandae earum. Aperiam laborum, obcaecati nulla labore in, neque repellendus, officia error iusto omnis natus architecto eos similique odit tenetur quod.
+            </div>
+
+            <button class="bouton">
+                Get Started
+            </button>
+
+        </div>
+        
+        <div class="imageHome">
+            <img src="./Images/brainstorm.jpg" alt="">
+        </div>
+
+    </section>
+
+    <section id="services">
+        <div class="containerServices">
+            <div class="titreService">
+                <b>What are our core service ?</b>
+            </div>
+            <div class="contenueService">
+                <div class="sousPartieService">
+                    <div class="imgServ">
+                        <img src="./Images/rouages.jpg" alt="">
+                    </div>
+                    <div class="titreServ">
+                        <h1><b>Website creation</b></h1>
+                    </div>
+                    <div>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto molestias veritatis tempora nulla praesentium. Veniam quod quidem autem rem a qui reiciendis, cum ex repellat, ad fugit consequuntur voluptatum officia!
+                    </div>
+                </div>
+                <div class="sousPartieService">
+                    <div class="imgServ">
+                        <img src="./Images/search.jpg" alt="">
+                    </div>
+                    <div class="titreServ">
+                        <h1><b>Seo and Sem </b></h1>
+                    </div>
+                    <div>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto molestias veritatis tempora nulla praesentium. Veniam quod quidem autem rem a qui reiciendis, cum ex repellat, ad fugit consequuntur voluptatum officia!
+                    </div>
+                </div>
+                <div class="sousPartieService">
+                    <div class="imgServ">
+                        <img src="./Images/cowork.jpg" alt="">
+                    </div>
+                    <div class="titreServ">
+                        <h1><b>Digital innovation</b></h1>
+                    </div>
+                    <div>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto molestias veritatis tempora nulla praesentium. Veniam quod quidem autem rem a qui reiciendis, cum ex repellat, ad fugit consequuntur voluptatum officia!
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="containerServices">
+            <div class="titreService"> <!-- meme css que pour le titre de service -->
+                <b>Who are we ? Meet the brains !</b>
+            </div>
+            <div class="contenueAbout">
+                <div class="profil">
+                    <div class="imgProfil">
+                        <img src="./Images/man-profile.png" alt="">
+                    </div>
+                    <div class="contenueProfil">
+                        <div class="titreProfil">
+                            <b>John Doe</b> <br>
+                            Business Guy
+                        </div>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis, minima illo quisquam earum placeat pariatur voluptatibus similique nulla. Voluptates aperiam corrupti quia magni et animi amet veritatis! Facere, fugiat beatae.
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima eos eius error amet commodi veritatis doloribus dolorem inventore cumque mollitia eveniet deleniti magnam animi consectetur repudiandae unde consequatur, veniam maxime?
+                    </div>
+                </div>
+
+                <div class="profil">
+                    <div class="imgProfil">
+                        <img src="./Images/girl-profile.png" alt="">
+                    </div>
+                    <div class="contenueProfil">
+                        <div class="titreProfil">
+                            <b>Jane Doe</b> <br>
+                            SEO Export
+                        </div>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis, minima illo quisquam earum placeat pariatur voluptatibus similique nulla. Voluptates aperiam corrupti quia magni et animi amet veritatis! Facere, fugiat beatae.
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima eos eius error amet commodi veritatis doloribus dolorem inventore cumque mollitia eveniet deleniti magnam animi consectetur repudiandae unde consequatur, veniam maxime?
+                    </div>
+                </div>
+
+                <div class="profil">
+                    <div class="imgProfil">
+                        <img src="./Images/man-profile.png" alt="">
+                    </div>
+                    <div class="contenueProfil">
+                        <div class="titreProfil">
+                            <b>Johnny Doe</b> <br>
+                            Web developper 
+                        </div>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis, minima illo quisquam earum placeat pariatur voluptatibus similique nulla. Voluptates aperiam corrupti quia magni et animi amet veritatis! Facere, fugiat beatae.
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima eos eius error amet commodi veritatis doloribus dolorem inventore cumque mollitia eveniet deleniti magnam animi consectetur repudiandae unde consequatur, veniam maxime?
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+
+        <!-- A la manière de notre Header le <footer> sert de balise sémantique pour la partie pied de page de notre site, 
+        contenant par exemple les mentions légales, addresse ou encore liens vers les comptes de réseaux sociaux. -->
+    
+    </footer>
+</body>
+</html>
