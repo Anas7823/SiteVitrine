@@ -87,13 +87,21 @@ header {
 }
 .bouton{
     color: white;
-    border-color:rgba(240, 248, 255, 0);
+    border: 1px solid black;
     border-radius: 20px;
     height: 40px;
     width: 120px;
     margin: 40px 0 0 70px;  /* haut | droit | bas | gauche (sens des aiguis d'une montre)*/
     background: rgb(219,91,91);
     background: linear-gradient(0deg, rgba(219,91,91,1) 0%, rgba(119,80,228,1) 80%);
+}
+
+.bouton:hover{
+    background: linear-gradient(0deg, rgba(119,80,228,1) 0%, rgba(219,91,91,1) 80%);
+}
+
+.bouton:active{
+    background: rgb(219,91,91);
 }
 .imageHome > img{ /* img descendant direct de imageHome */
     margin-left: 60px;
